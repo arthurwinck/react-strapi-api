@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuario_plataformas",
+  "info": {
+    "name": "usuario-plataforma"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "senha": {
+      "type": "password"
+    },
+    "etapa": {
+      "type": "enumeration",
+      "enum": [
+        "inicio",
+        "desenvolvimento",
+        "concluido"
+      ]
+    }
+  }
+}
